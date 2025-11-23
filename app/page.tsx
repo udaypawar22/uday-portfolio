@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import "animate.css";
 import NavigationBar from "@/components/NavigationBar";
 import { Section } from "@/types/Section";
