@@ -1,6 +1,5 @@
 import { Experience } from "@/types/Experience";
 import { Section } from "@/types/Section";
-import { eduAndExp } from "@/utils/constants";
 import ArrowIcon from "../ArrowIcon";
 
 interface Props {

@@ -1,5 +1,4 @@
 import { Section } from "@/types/Section";
-import { Skill } from "@/types/Skill";
 import { SkillCategory } from "@/types/SkillCategory";
 
 interface Props {

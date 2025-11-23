@@ -1,6 +1,5 @@
 import { Extra } from "@/types/Extra";
 import { Section } from "@/types/Section";
-import { title } from "process";
 
 interface Props {
   sectionData: Section;

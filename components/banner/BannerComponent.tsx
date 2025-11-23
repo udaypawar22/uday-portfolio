@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Banner } from "@/types/Banner";
 import { Section } from "@/types/Section";
 import ContactButton from "@/components/ContactButton";
