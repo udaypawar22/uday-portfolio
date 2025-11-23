@@ -24,18 +24,27 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.default-green-bg {
-  background-color: #35d399;
+.offscreen-nav {
+  position: fixed;
+  right: 0px;
+  height: 100%;
+  width: 100%;
 }
 
-.dark-green-bg {
-  background-color: #2db482;
+.offscreen-nav-hidden {
+  height: 100%;
+  width: 100%;
+  right: -100% !important;
 }
 
 .col-centered {
@@ -87,10 +96,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.animal-demo {
-  background-image: url("./img/dummy.jpg");
-}
-
 .custom-textarea {
   height: 210px;
 }
@@ -117,7 +122,6 @@ body {
 
 .underline--magical:hover {
   background-size: 100% 89%;
-  padding-top: 3px;
 }
 
 .underline--magical-2 {
