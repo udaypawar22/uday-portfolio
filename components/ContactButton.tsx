@@ -1,6 +1,6 @@
 "use client";
 
-import { Dispatch, SetStateAction, useState } from "react";
+import { useState } from "react";
 import ContactPane from "./ContactPane";
 
 interface Props {
@@ -10,6 +10,7 @@ interface Props {
 
 export default function ContactButton({ className, children }: Props) {
   const [active, setActive] = useState(false);
+  const paneClassName = active ? "bottom-0" : "-bottom-12/12";
   return (
     <>
       <button
@@ -22,7 +23,7 @@ export default function ContactButton({ className, children }: Props) {
         {children}
       </button>
       {/* contact me pane */}
-      {active && <ContactPane setActive={setActive} />}
+      <ContactPane className={paneClassName} setActive={setActive} />
     </>
   );
 }
